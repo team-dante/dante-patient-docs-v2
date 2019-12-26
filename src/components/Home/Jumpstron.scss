@@ -1,0 +1,118 @@
+$dark-blue: #14a8e8;
+$light-blue: #31c1ff;
+
+.js-layout {
+  background-color: rgba($light-blue, 0.2);
+  .js-container {
+    width: 80%;
+    margin: auto;
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: row;
+    .js-text {
+      flex: 2;
+      margin-right: 4vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .js-title {
+        font-size: 6vw;
+        font-weight: bold;
+        padding-bottom: 2vw;
+        letter-spacing: 1px;
+      }
+      .js-description {
+        font-size: 2.7vw;
+        color: #3d3d3d;
+        line-height: 4vw;
+        padding-bottom: 3vw;
+      }
+      .js-subscript {
+        color: #525252;
+        padding-bottom: 3vw;
+        font-size: 1.7vw;
+      }
+      .js-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        .js-link-btn {
+          padding: 1.4vw 0;
+          width: 44%;
+          font-size: 1.5vw;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 200ms ease-in;
+
+          &.github {
+            border: 1px solid $dark-blue;
+            color: $dark-blue;
+            &:hover {
+              background-color: $light-blue;
+              color: white;
+            }
+          }
+          &.start {
+            background-color: $light-blue;
+            color: white;
+          }
+        }
+      }
+    }
+    .js-img {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .js-layout {
+    padding: 3vh 0;
+    .js-container {
+      width: 80%;
+      flex-direction: column;
+      .js-text {
+        align-items: center;
+        .js-title {
+          font-size: 10vw;
+          padding-bottom: 3vh;
+        }
+        .js-description {
+          font-size: 3.6vw;
+          padding-bottom: 3vh;
+          text-align: center;
+        }
+        .js-subscript {
+          font-size: 2.5vw;
+          padding-bottom: 3vh;
+        }
+        .js-links {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .js-link-btn {
+            width: 100%;
+            font-size: 3vw;
+            padding: 1.2vh 0;
+            margin-bottom: 1vh;
+          }
+        }
+      }
+      .js-img {
+        width: 70%;
+        padding-top: 1rem;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}

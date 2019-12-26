@@ -1,0 +1,29 @@
+.sn-list {
+  margin-left: 1.5rem;
+  ul {
+    list-style-type: none;
+    padding-left: 2rem;
+    li {
+      padding-bottom: 0.8rem;
+      .item {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        &.active {
+          font-weight: bold;
+          &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: -20px;
+            width: 4px;
+            background-color: #31c1ff;
+          }
+        }
+      }
+    }
+  }
+}

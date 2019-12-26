@@ -1,0 +1,20 @@
+$sidebar-width: 25%;
+
+.doc-layout {
+  .side-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: $sidebar-width;
+    height: calc(100vh - 60px);
+    background-color: rgb(242, 242, 242);
+  }
+  .doc-content {
+    margin-left: $sidebar-width;
+    padding: 0.7rem 3.4rem;
+  }
+  .footer-wrapper {
+    margin-left: $sidebar-width;
+  }
+
+}

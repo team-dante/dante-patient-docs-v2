@@ -1,0 +1,14 @@
+.feat-container {
+  width: 90%;
+  margin: auto;
+  padding: 2vw 0;
+  .feat-title {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .feat-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,60 @@
+$light-grey: #3d3d3d;
+
+.f-container {
+  padding: 1.3rem;
+  flex-basis: 44%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+
+  .f-text {
+    flex: 2;
+    padding-right: 1.4rem;
+    .f-title {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+    }
+    .f-description {
+      line-height: 1.5rem;
+      color: $light-grey;
+    }
+  }
+  .f-img {
+    flex: 1;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .f-container {
+    flex-basis: 42%;
+    .f-text {
+      flex: 4;
+      padding-right: 0.9rem;
+      .f-title {
+        font-size: 1.2rem;
+      }
+      .f-description {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+    }
+    .f-img {
+      flex: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .f-container {
+    flex-basis: 100%;
+    .f-text {
+      .f-title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

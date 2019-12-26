@@ -1,0 +1,76 @@
+.doc-styles h1 {
+    font-size: 2.7em;
+}
+
+.doc-styles h2 {
+    font-size: 2.4em;
+}
+.doc-styles h2::before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ececec;
+    padding-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.doc-styles h3 {
+    font-size: 1.8rem;
+    padding-top : 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.doc-styles h4 {
+    font-size: 1.4rem;
+}
+
+.doc-styles p, .doc-styles ol, .doc-styles ul {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.doc-styles .sect-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.doc-styles .sect-layout .sect-text {
+    flex: 3;
+    padding-right: 1rem;
+}
+
+.doc-styles .sect-layout .sect-media {
+    flex: 1;
+    padding-top: 1rem;
+}
+.doc-styles .sect-layout .sect-media img {
+    width: 80%;
+    height: auto;
+}
+.doc-styles .highlight {
+    background: rgba(255, 233, 197, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.doc-styles .hl-header {
+    color: #ffa614;
+    font-weight: bold;
+    font-size: 18px;
+}
+.doc-styles .highlight p {
+    font-size: 15px;
+}
+.doc-styles .highlight .hl-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.1rem 0;
+}
+
+@media screen and (max-width: 890px) {
+    .doc-styles .sect-layout .sect-text {
+        flex: 6;
+    }
+    .doc-styles .sect-layout .sect-media {
+        flex: 5;
+    }
+}
