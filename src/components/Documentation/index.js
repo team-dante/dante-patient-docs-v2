@@ -8,6 +8,8 @@ import SideNav from './SideNav';
 import { Section, SectionFlexLayout, Highlight } from './Sections';
 import Footer from '../Footer';
 
+import { ReactComponent as Fab } from '../../assets/fab.svg';
+import { ReactComponent as Close } from '../../assets/close.svg';
 import SignIn from '../../assets/SignIn.PNG';
 import Map from '../../assets/LocationTracking.png';
 import ZoomIn from '../../assets/zoom-in.jpg';
@@ -42,8 +44,11 @@ function useScrollToHash() {
 const Documentation = () => {
   const elRef = useRef([...Array(10)].map(() => createRef()));
   const [active, setActive] = useState(-1);
+  const [display, setDisplay] = useState(false);
+  const setOverlayState = () => {
+    setDisplay(!display);
+  };
   const scroll = useScroll();
-
   // useScrollToHash();
 
   useEffect(() => {
@@ -75,9 +80,9 @@ const Documentation = () => {
   return (
     <div className="doc-layout">
 
-      <div className="side-nav">
+      <div className={"side-nav " + (display ? 'show' : 'hide')}>
         <MenuProvider value={active}>
-          <SideNav/>
+          <SideNav toggleDisplay={setOverlayState}/>
         </MenuProvider>
       </div>
 
@@ -367,6 +372,10 @@ const Documentation = () => {
 
       <div className="footer-wrapper">
         <Footer/>
+      </div>
+
+      <div className="fab" onClick={setOverlayState}>
+        {display ? <Close width={70} height={70}/> : <Fab width={70} height={70}/>}
       </div>
 
     </div>

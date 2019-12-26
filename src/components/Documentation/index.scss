@@ -8,6 +8,7 @@ $sidebar-width: 25%;
     width: $sidebar-width;
     height: calc(100vh - 60px);
     background-color: rgb(242, 242, 242);
+    visibility: visible;
   }
   .doc-content {
     margin-left: $sidebar-width;
@@ -16,5 +17,54 @@ $sidebar-width: 25%;
   .footer-wrapper {
     margin-left: $sidebar-width;
   }
+  .fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  $sidebar-width: 30%;
+  .doc-layout {
+    .side-nav {
+      width: $sidebar-width;
+    }
+    .doc-content {
+      margin-left: $sidebar-width;
+    }
+
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .doc-layout {
+    .side-nav {
+      top: 60px;
+      left: 0;
+      z-index: 9;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      &.show {
+        visibility: visible;
+      }
+      &.hide {
+        visibility: hidden;
+      }
+    }
+    .doc-content {
+      margin-left: 0;
+    }
+    .footer-wrapper {
+      margin-left: 0;
+    }
+    .fab {
+      visibility: visible;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
 }

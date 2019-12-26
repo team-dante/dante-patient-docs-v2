@@ -1,8 +1,9 @@
 .sn-list {
-  margin-left: 1.5rem;
+  margin-left: 8vw;
+  font-size: 1.2rem;
   ul {
     list-style-type: none;
-    padding-left: 2rem;
+    padding-left: 1.7rem;
     li {
       padding-bottom: 0.8rem;
       .item {
@@ -23,6 +24,24 @@
             background-color: #31c1ff;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .sn-list {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .sn-list {
+    ul {
+      li {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
       }
     }
   }

@@ -25,7 +25,7 @@
 
 .doc-styles p, .doc-styles ol, .doc-styles ul {
     line-height: 1.5em;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .doc-styles .sect-layout {
@@ -58,12 +58,22 @@
     font-size: 18px;
 }
 .doc-styles .highlight p {
-    font-size: 15px;
+    font-size: 16px;
 }
 .doc-styles .highlight .hl-img-container {
     display: flex;
     justify-content: center;
     padding: 1.1rem 0;
+}
+
+@media screen and (max-width: 1600px) {
+    .doc-styles p, .doc-styles ol, .doc-styles ul {
+        line-height: 1.5em;
+        font-size: 1.1em;
+    }
+    .doc-styles .highlight p {
+         font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -72,5 +82,23 @@
     }
     .doc-styles .sect-layout .sect-media {
         flex: 5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doc-styles .sect-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .doc-styles .sect-layout .sect-text {
+    }
+
+    .doc-styles .sect-layout .sect-media {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .doc-styles .sect-layout .sect-media img {
+        width: 40%;
     }
 }
