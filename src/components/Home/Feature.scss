@@ -13,10 +13,24 @@ $light-grey: #3d3d3d;
     .f-title {
       font-size: 1.8rem;
       margin-top: 1rem;
+      margin-bottom: 1.3rem;
     }
     .f-description {
       line-height: 1.5rem;
+      padding-bottom: 1.8rem;
       color: $light-grey;
+    }
+    .f-button {
+      border-radius: 5px;
+      border: 1px solid #0f0f0f;
+      padding: 0.4rem 0.8rem;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        background-color: rgba(#0f0f0f, 0.1);
+      }
     }
   }
   .f-img {
@@ -28,7 +42,7 @@ $light-grey: #3d3d3d;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
   .f-container {
     flex-basis: 42%;
     .f-text {
@@ -48,7 +62,7 @@ $light-grey: #3d3d3d;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .f-container {
     flex-basis: 100%;
     .f-text {

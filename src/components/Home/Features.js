@@ -16,18 +16,21 @@ function Features() {
                  img={LocationTracking}
                  alt="Location Tracking"
                  color="#f6dafa"
+                 link="/documentation#oncology-map"
         />
         <Feature title="Time Tracking"
                  description="Patients can see how much time they have spent at each treatment stage."
                  img={TimeTracking}
                  alt="Time Tracking"
                  color="#ffe9c5"
+                 link="/documentation#time-tracking"
         />
         <Feature title="View Time Tracking Results in Graphs"
                  description="Patients can see time tracking statistics in visual appealing graphs."
                  img={Graph}
                  alt="Time Tracking in Graphs"
                  color="#c9ffc8"
+                 link="/documentation#stats"
         />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Jumpstron.scss';
 import HeaderImage from '../../assets/header-img.png';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Jumpstron() {
   return (
@@ -20,9 +21,9 @@ function Jumpstron() {
             <a className="js-link-btn github" href="https://github.com/team-dante/Dante-Patient-Swift" target="_blank">
               View on Github
             </a>
-            <div className="js-link-btn start">
+            <Link className="js-link-btn start" to="/documentation#getting-started">
               Get Started
-            </div>
+            </Link>
           </div>
         </div>
         <div className="js-img">
