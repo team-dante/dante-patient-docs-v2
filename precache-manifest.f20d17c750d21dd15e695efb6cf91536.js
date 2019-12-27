@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5161b2535648420ac3e5dee8ccca706d",
+    "revision": "b5055f0eaed4246e44ba279ec0d46407",
     "url": "/dante-patient-docs-v2/index.html"
   },
   {
