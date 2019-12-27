@@ -4,12 +4,19 @@
   padding: 2vw 0;
   .feat-title {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 4rem;
   }
   .feat-lists {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .feat-container {
+    .feat-title {
+      font-size: 2.6rem;
+    }
   }
 }
 @media screen and (max-width: 600px) {

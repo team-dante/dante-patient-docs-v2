@@ -1,7 +1,8 @@
 $light-grey: #3d3d3d;
 
 .f-container {
-  padding: 2.2rem;
+  padding: 2.5rem;
+  border-radius: 3px;
   flex-basis: 44%;
   display: flex;
   flex-direction: row;
@@ -11,23 +12,23 @@ $light-grey: #3d3d3d;
     flex: 2;
     padding-right: 1.4rem;
     .f-title {
-      font-size: 2.5rem;
+      font-size: 3.6rem;
       margin-top: 1rem;
-      margin-bottom: 1.7rem;
+      margin-bottom: 3rem;
     }
     .f-description {
-      line-height: 2.2rem;
-      font-size: 1.8rem;
-      margin-bottom: 2.6rem;
+      line-height: 3.2rem;
+      font-size: 2.8rem;
+      margin-bottom: 4rem;
       color: $light-grey;
     }
     .f-button {
-      border-radius: 5px;
+      border-radius: 7px;
       border: 1px solid #0f0f0f;
-      padding: 0.8rem 1.6rem;
+      padding: 1.6rem 3.2rem;
       text-align: center;
       cursor: pointer;
-      font-size: 1.6rem;
+      font-size: 2.3rem;
       text-decoration: none;
       color: inherit;
       &:hover {
@@ -38,14 +39,36 @@ $light-grey: #3d3d3d;
   .f-img {
     flex: 1;
     img {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
+      height: 100%;
     }
   }
 }
+
+@media screen and (max-width: 1920px) {
+  .f-container {
+    padding: 2.2rem;
+    .f-text {
+      .f-title {
+        font-size: 2.8rem;
+        margin-bottom: 1.7rem;
+      }
+      .f-description {
+        line-height: 2.2rem;
+        font-size: 1.8rem;
+        margin-bottom: 2.6rem;
+      }
+      .f-button {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .f-container {
-    padding: 1.6rem;
+    padding: 1.5rem;
     .f-text {
       .f-title {
         font-size: 1.8rem;
@@ -57,12 +80,10 @@ $light-grey: #3d3d3d;
         margin-bottom: 1.8rem;
       }
       .f-button {
+        border-radius: 5px;
         font-size: 1.0rem;
         padding: 0.4rem 0.8rem;
       }
-    }
-    .f-img {
-
     }
   }
 }
