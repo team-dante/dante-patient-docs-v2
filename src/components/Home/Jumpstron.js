@@ -18,7 +18,11 @@ function Jumpstron() {
             @ Department of Radiation Oncology, UCI Medical Center
           </div>
           <div className="js-links">
-            <a className="js-link-btn github" href="https://github.com/team-dante/Dante-Patient-Swift" target="_blank">
+            <a className="js-link-btn github"
+               href="https://github.com/team-dante/Dante-Patient-Swift"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
               View on Github
             </a>
             <Link className="js-link-btn start" to="/documentation#getting-started">
