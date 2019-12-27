@@ -13,6 +13,9 @@ $sidebar-width: 25%;
   .doc-content {
     margin-left: $sidebar-width;
     padding: 0.7rem 3.4rem;
+    code {
+      font-size: 1.1rem;
+    }
   }
   .footer-wrapper {
     margin-left: $sidebar-width;
@@ -22,6 +25,16 @@ $sidebar-width: 25%;
     bottom: 30px;
     right: 30px;
     visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .doc-layout {
+    .doc-content {
+      code {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 
