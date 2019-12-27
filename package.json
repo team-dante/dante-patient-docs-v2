@@ -1,6 +1,6 @@
 {
   "name": "dante-patient-docs-new",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "private": true,
   "homepage": "https://team-dante.github.io/dante-patient-docs-v2",
   "dependencies": {
