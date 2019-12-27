@@ -2,7 +2,7 @@
   "name": "dante-patient-docs-new",
   "version": "0.2.2",
   "private": true,
-  "homepage": "http://team-dante.github.io/dante-patient-docs-v2",
+  "homepage": "https://team-dante.github.io/dante-patient-docs-v2",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
