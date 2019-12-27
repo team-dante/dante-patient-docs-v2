@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dante-patient-docs-v2/precache-manifest.f20d17c750d21dd15e695efb6cf91536.js"
+  "/dante-patient-docs-v2/precache-manifest.42462174d69b340c87433a6180abb4b2.js"
 );
 
 self.addEventListener('message', (event) => {
