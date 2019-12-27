@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import Logo from '../../assets/dante-patient-logo.png';
 import { ReactComponent as Toggler } from '../../assets/toggler.svg';
+import { ReactComponent as Close } from '../../assets/close-default.svg';
 import './index.scss';
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="nav-toggler" onClick={() => setDisplay(!display)}>
-            <Toggler width={30} height={30}/>
+            {display ? <Close width={30} height={30}/> : <Toggler width={30} height={30}/>}
           </div>
         </div>
         <ul className={"nav-expand-menu " + (display ? 'show' : 'hide')}>

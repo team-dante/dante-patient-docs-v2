@@ -12,3 +12,11 @@
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 600px) {
+  .feat-container {
+    .feat-title {
+      text-align: center;
+      font-size: 1.7rem;
+    }
+  }
+}
