@@ -1,4 +1,26 @@
-#f1,#f2,#f3,#f4 {
-  padding-top: 60px;
-  margin-top: -60px;
+.faq-container {
+  width: 80%;
+  margin: auto;
+  overflow-y: auto;
+  h1 {
+    padding: 1rem 0;
+  }
+  h3 {
+    position: relative;
+  }
+  h3::before {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    margin-bottom: -17px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #31c1ff;
+  }
+  p {
+    padding: 0.9rem 0;
+    line-height: 1.4rem;
+  }
 }
