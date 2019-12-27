@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d58fa85b1d62485c534369d464c629cd",
+    "revision": "5161b2535648420ac3e5dee8ccca706d",
     "url": "/dante-patient-docs-v2/index.html"
   },
   {
-    "revision": "37e0bc51a7800acad7de",
-    "url": "/dante-patient-docs-v2/static/css/main.a240e1c9.chunk.css"
+    "revision": "769fca36a8d36b850abf",
+    "url": "/dante-patient-docs-v2/static/css/main.325416d6.chunk.css"
   },
   {
     "revision": "d6489d5b9d591568c55f",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dante-patient-docs-v2/static/js/2.e9417d49.chunk.js.LICENSE"
   },
   {
-    "revision": "37e0bc51a7800acad7de",
+    "revision": "769fca36a8d36b850abf",
     "url": "/dante-patient-docs-v2/static/js/main.cf7a7fcb.chunk.js"
   },
   {
