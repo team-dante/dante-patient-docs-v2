@@ -41,6 +41,7 @@
 .doc-styles .sect-layout .sect-media {
     flex: 1;
     padding-top: 1rem;
+    display: flex;
     align-items: flex-start;
 }
 .doc-styles .sect-layout .sect-media img {
@@ -97,6 +98,7 @@
         padding-top: 1rem;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .doc-styles .sect-layout .sect-media img {
         width: 40%;
